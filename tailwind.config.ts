@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        mgc: {
+          yellow: "hsl(var(--mgc-yellow))",
+          gold: "hsl(var(--mgc-gold))",
+          tan: "hsl(var(--mgc-tan))",
+          cream: "hsl(var(--mgc-cream))",
+          "dark-gray": "hsl(var(--mgc-dark-gray))",
+          "light-gray": "hsl(var(--mgc-light-gray))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
