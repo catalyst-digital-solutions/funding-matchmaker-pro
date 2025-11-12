@@ -1,4 +1,25 @@
 import { useState } from 'react';
+import { 
+  DollarSign, 
+  Building2, 
+  CreditCard, 
+  FileText, 
+  Factory, 
+  Building, 
+  Rocket, 
+  Briefcase,
+  Phone,
+  Check,
+  Lightbulb,
+  Target,
+  Zap,
+  Shield,
+  TrendingUp,
+  Handshake,
+  ClipboardList,
+  MapPin,
+  ChevronDown
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
@@ -59,15 +80,19 @@ const HeroSection = () => {
           
           <a
             href="tel:6613103040"
-            className="inline-flex items-center justify-center bg-transparent text-white text-xl font-semibold px-12 py-5 rounded-lg border-2 border-white hover:bg-white/10 transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 bg-transparent text-white text-xl font-semibold px-12 py-5 rounded-lg border-2 border-white hover:bg-white/10 transition-all duration-200"
           >
-            📞 (661) 310-3040
+            <Phone className="w-6 h-6" /> (661) 310-3040
           </a>
         </div>
 
-        <p className="text-white/80 text-sm mt-6">
-          ✓ No-obligation consultation &nbsp; | &nbsp; ✓ Fast approval process &nbsp; | &nbsp; ✓ Multiple lender network
-        </p>
+      <p className="text-white/80 text-sm mt-6 flex items-center justify-center gap-4 flex-wrap">
+        <span className="flex items-center gap-1"><Check className="w-4 h-4" /> No-obligation consultation</span>
+        <span>|</span>
+        <span className="flex items-center gap-1"><Check className="w-4 h-4" /> Fast approval process</span>
+        <span>|</span>
+        <span className="flex items-center gap-1"><Check className="w-4 h-4" /> Multiple lender network</span>
+      </p>
 
       </div>
     </section>
@@ -94,7 +119,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">💰</div>
+                <div className="mb-3">
+                  <DollarSign className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Business Cash Advance
                 </h3>
@@ -132,7 +159,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">🏦</div>
+                <div className="mb-3">
+                  <Building2 className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Business Term Loans
                 </h3>
@@ -170,7 +199,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">💳</div>
+                <div className="mb-3">
+                  <CreditCard className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Business Line of Credit
                 </h3>
@@ -208,7 +239,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">📄</div>
+                <div className="mb-3">
+                  <FileText className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Invoice Factoring
                 </h3>
@@ -246,7 +279,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">🏭</div>
+                <div className="mb-3">
+                  <Factory className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Equipment Financing
                 </h3>
@@ -284,7 +319,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-cream))] to-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-tan))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">🏢</div>
+                <div className="mb-3">
+                  <Building className="w-12 h-12 text-[hsl(var(--mgc-gold))]" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Real Estate Investment / Commercial Mortgage
                 </h3>
@@ -322,7 +359,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-gold))] to-[hsl(var(--mgc-yellow))] text-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-gold))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">🚀</div>
+                <div className="mb-3">
+                  <Rocket className="w-12 h-12 text-white" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold mb-2">
                   STARTUP Unsecured Business Funding
                 </h3>
@@ -360,7 +399,9 @@ const AllFundingSolutionsGrid = () => {
           <div className="bg-gradient-to-br from-[hsl(var(--mgc-gold))] to-[hsl(var(--mgc-yellow))] text-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow border-2 border-[hsl(var(--mgc-gold))]">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-4xl mb-3">💼</div>
+                <div className="mb-3">
+                  <Briefcase className="w-12 h-12 text-white" strokeWidth={2.5} />
+                </div>
                 <h3 className="text-2xl font-bold mb-2">
                   STARTUP Small Business Loan
                 </h3>
@@ -507,7 +548,10 @@ const ComparisonTable = () => {
         </div>
 
         <div className="mt-8 bg-card rounded-xl p-6 shadow-lg">
-          <h3 className="text-xl font-bold text-foreground mb-3">💡 Can't Decide Which Option Is Right for You?</h3>
+          <h3 className="text-xl font-bold text-foreground mb-3 flex items-center gap-2">
+            <Lightbulb className="w-6 h-6 text-[hsl(var(--mgc-yellow))]" />
+            Can't Decide Which Option Is Right for You?
+          </h3>
           <p className="text-muted-foreground leading-relaxed mb-4">
             That's where Mesa Group Capital's brokerage expertise comes in. We analyze your business profile, credit situation, revenue, and goals to match you with the <strong>best funding source</strong> from our network of lenders. No guesswork—just strategic guidance.
           </p>
@@ -538,7 +582,9 @@ const WhyChooseMesaGroupCapital = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">🎯</div>
+            <div className="flex-shrink-0">
+              <Target className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 We Match You with the Right Lender
@@ -550,7 +596,9 @@ const WhyChooseMesaGroupCapital = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">⚡</div>
+            <div className="flex-shrink-0">
+              <Zap className="w-14 h-14 text-[hsl(var(--mgc-yellow))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 Fast Pre-Qualification & Approval
@@ -562,7 +610,9 @@ const WhyChooseMesaGroupCapital = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">💼</div>
+            <div className="flex-shrink-0">
+              <Briefcase className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 Startup-Friendly Programs
@@ -574,7 +624,9 @@ const WhyChooseMesaGroupCapital = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">🛡️</div>
+            <div className="flex-shrink-0">
+              <Shield className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 Bad Credit? We Have Options
@@ -586,7 +638,9 @@ const WhyChooseMesaGroupCapital = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">📈</div>
+            <div className="flex-shrink-0">
+              <TrendingUp className="w-14 h-14 text-[hsl(var(--mgc-yellow))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 Flexible Repayment Structures
@@ -598,7 +652,9 @@ const WhyChooseMesaGroupCapital = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 text-5xl">🤝</div>
+            <div className="flex-shrink-0">
+              <Handshake className="w-14 h-14 text-[hsl(var(--mgc-gold))]" strokeWidth={2} />
+            </div>
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
                 Ongoing Strategic Support
@@ -628,9 +684,9 @@ const WhyChooseMesaGroupCapital = () => {
             
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center bg-white text-[hsl(var(--mgc-gold))] text-xl font-semibold px-10 py-4 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 bg-white text-[hsl(var(--mgc-gold))] text-xl font-semibold px-10 py-4 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
             >
-              📞 Call (661) 310-3040
+              <Phone className="w-6 h-6" /> Call (661) 310-3040
             </a>
           </div>
         </div>
@@ -753,8 +809,9 @@ const FinalCTA = () => {
         </p>
 
         <div className="bg-white rounded-xl p-8 mb-8 shadow-2xl">
-          <h3 className="text-2xl font-bold text-foreground mb-4">
-            📋 Start Your Free Consultation
+          <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center justify-center gap-2">
+            <ClipboardList className="w-7 h-7 text-[hsl(var(--mgc-gold))]" />
+            Start Your Free Consultation
           </h3>
           <p className="text-lg text-muted-foreground mb-6">
             No obligation. No pressure. Just expert guidance on which funding solution fits your business best.
@@ -769,9 +826,9 @@ const FinalCTA = () => {
             
             <a
               href="tel:6613103040"
-              className="inline-flex items-center justify-center bg-transparent text-[hsl(var(--mgc-gold))] text-xl font-semibold px-12 py-5 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
+              className="inline-flex items-center justify-center gap-2 bg-transparent text-[hsl(var(--mgc-gold))] text-xl font-semibold px-12 py-5 rounded-lg border-2 border-[hsl(var(--mgc-gold))] hover:bg-secondary/30 transition-all duration-200"
             >
-              📞 (661) 310-3040
+              <Phone className="w-6 h-6" /> (661) 310-3040
             </a>
           </div>
           <p className="text-sm text-muted-foreground mt-4">
@@ -779,26 +836,20 @@ const FinalCTA = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 text-white text-sm">
-          <div className="flex items-center justify-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span>8 Funding Solutions</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span>30+ Lender Network</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            <span>Expert Brokerage Guidance</span>
-          </div>
-        </div>
+    <div className="grid md:grid-cols-3 gap-4 text-white text-sm">
+      <div className="flex items-center justify-center gap-2">
+        <Check className="w-5 h-5" />
+        <span>8 Funding Solutions</span>
+      </div>
+      <div className="flex items-center justify-center gap-2">
+        <Check className="w-5 h-5" />
+        <span>30+ Lender Network</span>
+      </div>
+      <div className="flex items-center justify-center gap-2">
+        <Check className="w-5 h-5" />
+        <span>Expert Brokerage Guidance</span>
+      </div>
+    </div>
 
       </div>
     </section>
@@ -815,13 +866,17 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold text-[hsl(var(--mgc-yellow))] mb-4">Mesa Group Capital</h3>
-            <p className="text-sm text-gray-300 mb-4">
-              Your trusted business funding brokerage connecting businesses with the right capital solutions.
-            </p>
-            <p className="text-sm text-gray-300">
-              📍 Bakersfield, CA<br />
-              📞 (661) 310-3040
-            </p>
+        <p className="text-sm text-gray-300 mb-4">
+          Your trusted business funding brokerage connecting businesses with the right capital solutions.
+        </p>
+        <div className="text-sm text-gray-300 space-y-1">
+          <p className="flex items-center gap-2">
+            <MapPin className="w-4 h-4" /> Bakersfield, CA
+          </p>
+          <p className="flex items-center gap-2">
+            <Phone className="w-4 h-4" /> (661) 310-3040
+          </p>
+        </div>
           </div>
 
           {/* Funding Solutions */}
