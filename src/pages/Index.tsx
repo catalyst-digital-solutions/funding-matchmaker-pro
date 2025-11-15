@@ -38,7 +38,7 @@ const Index = () => {
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-br from-[hsl(var(--mgc-dark-gray))] via-[hsl(var(--mgc-gold))] to-[hsl(var(--mgc-yellow))] py-24 px-6">
+    <section className="bg-gradient-to-br from-white via-amber-50 to-white py-12 md:py-20 lg:py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
         
         <div className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-bold mb-8">
